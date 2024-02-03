@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.5)), url(./eduford_img/banner.png);
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+nav{
+    display: flex;
+    text-align: right; 
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+    
+
+.nav-links ul li{
+    padding: 8px 12px;
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: ;
+}
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: orange;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover:after {
+    width: 100%;
+}
+.text-box{
+    color: whitesmoke;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+    font-family: 'Protest Strike', sans-serif;
+
+    
+}
+.text-box p{
+    margin: 20px 10rem 5rem;
+    font-size: 16px;
+    
+}
+.hero-button{
+    border: solid white;
+    border-radius: 2px;
+    padding: 20px 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+
+    
+}
+.hero-button:hover{
+    border: solid white;
+    background: #f44336;
+    transition: 0.5s;
+}
+.close-button{
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;    
+    width: 30%;
+    border-radius: 0 0 10px;
+    box-shadow: 1px 1px 3px 0.9px;
+    display: none;
+
+}
+.menu-button{
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: absolute;    
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 0.9px;
+    display: none;
+    
+}
+
+
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 30px;
+    }
+    nav img{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+    .text-box p{
+        font-size: 13px;
+        margin: 20px 20px 4rem;
+    }
+    .nav-links ul li{
+        display: block;
+        
+
+    }
+    .nav-links{
+        position: absolute;
+        background:#f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        z-index: 2;
+        text-align: left;
+        transition: 1s; 
+    }
+    .nav-links ul li:hover:after{
+        display: static;
+        width: 50%;
+        text-align: left;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+
+    .close-button{
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;    
+    width: 30%;
+    border-radius: 0 0 10px;
+    box-shadow: 1px 1px 3px 0.9px;
+}
+    .menu-button{
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    width: 10%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 0.9px;
+    justify-content: center;
+
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}

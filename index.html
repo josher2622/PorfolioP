@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>CPSC PAGE</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"> <img src="./Images/CPSC-logo.png" alt="logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <a href="" class="close-button" onclick="hideMenu()">✖ Close</a>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">COURSE</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <a href="" class="menu-button" onclick="showMenu()">☰Menu</a>
+
+        </nav>
+
+    <div class="text-box">
+        <h1>Best School in Camiguin</h1>
+            <p>Camiguin Polytechnic State College, an institution of higher learning 
+                in the island of Camiguin, commits to provide quality higher professional, 
+                technical instruction, research, extension 
+                and production services, advanced studies for progressive leadership 
+                in <strong>Agriculture, Teacher Education, Engineering and Computer Studies, 
+                    Industrial Technology, Arts and Sciences, Tourism, 
+                    Business and Public Administration.</strong>
+            </p>
+
+        <a href="" class="hero-button">Visit Us To know More</a>
+
+    </div>
+
+
+    </section>
+<!--------Java Script For toggle Menu----------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu (){
+            navLinks.style.right = "0";
+        }
+        function hideMenu (){
+            navLinks.style.right = "-200px";
+        }
+
+
+    </script>
+    
+</body>
+</html>
